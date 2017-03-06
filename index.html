@@ -10,10 +10,11 @@
   <div align="right" class="dropdown">Hola
 	  <button onclick="myFunction()" class="dropbtn">&#9776;</button>
 	  <div id="myDropdown" class="dropdown-content">
-		  <a href="#">Coders</a>
+		  <a id ="datos" href="#">Coders</a>
 		  <a href="#l">Salir</a>
 	  </div>
   </div>
+
   <img src="assets/images/la1.png" alt="" width="500" align="center">
   <h1>¿Qué es Laboratoria?</h1>
   <p align="center">En Laboratoria identificamos jóvenes de bajos recursos
@@ -35,7 +36,7 @@
   <input type="button" value="Sprint 2" onclick="mostarOcultar('text2')">
   <br/>
   <h2 "TITULO2" align="left">Sprint 2: Introducción al desarrollo web y construcción de páginas web</h2><br>
-      <div id ="TEXTO2"align="left">
+      <div align="left">
       1. Ciclo de vida del desarrollo web y arquitectura básica cliente/servidor/Configuración del ambiente de trabajo e introducción a git.<br>
       2. HTML y Javascript en el navegador.<br>
       3. Manejo de comandos básicos de git en la terminal.<br>
@@ -43,7 +44,7 @@
       5. Git / Resolución de conflictos / Branching model.<br>
       6. DOM / BOM.<br></div>
     <h2 "TITULO2" align="left">Sprint 1: Introducción a JavaScript</h2><br>
-        <div id ="TEXTO2"align="left">
+        <div align="left">
         1. Fundamentos de Programación<br>
         2. Funciones<br>
         3. Arreglos<br>
@@ -96,6 +97,25 @@
   <script>
     var nombre = document.getElementById("nombre");
     prompt("¿Cuál es tu nombre?");
+  </script>
+  <script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
   </script>
 
 
