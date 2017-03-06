@@ -7,6 +7,13 @@
   <title>El capitán v.0.0.1 </title>
 </head>
 <body style="text-align: center;">
+  <div align="right" class="dropdown">Hola
+	  <button onclick="myFunction()" class="dropbtn">&#9776;</button>
+	  <div id="myDropdown" class="dropdown-content">
+		  <a href="#">Perfil</a>
+		  <a href="#l">Salir</a>
+	  </div>
+  </div>
   <img src="assets/images/la1.png" alt="" width="500" align="center">
   <h1>¿Qué es Laboratoria?</h1>
   <p align="center">En Laboratoria identificamos jóvenes de bajos recursos
@@ -24,7 +31,12 @@
     de acuerdo a Course Report.</p>
   <h3 align="left">Temas:</h3>
   <button>Sprint 1</button> <button>Sprint 2</button> <button>Sprint 3</button>
+
   <div id = nombre></div>
+  <script>
+    var nombre = document.getElementById("nombre");
+    prompt("¿Cuál es tu nombre?");
+  </script>
 
 </body>
 </html>
