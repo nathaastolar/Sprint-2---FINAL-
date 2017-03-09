@@ -5,16 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>El capitán v.0.0.1 </title>
+  <link href="assets/css/test.css">
 </head>
 <body style="text-align: center;">
-  <div align="right" class="dropdown">Hola
-	  <button onclick="myFunction()" class="dropbtn">&#9776;</button>
-	  <div id="myDropdown" class="dropdown-content">
-		  <a id ="datos" href="#">Coders</a>
-		  <a href="#l">Salir</a>
-	  </div>
-  </div>
-
   <img src="assets/images/la1.png" alt="" width="500" align="center">
   <h1>¿Qué es Laboratoria?</h1>
   <p align="center">En Laboratoria identificamos jóvenes de bajos recursos
@@ -30,94 +23,9 @@
     para aprender en Laboratoria y valorar el trabajo. Por eso tenemos
     resultados superiores a los del "coding bootcamp" promedio de los EEUU
     de acuerdo a Course Report.</p>
-
   <h3 align="left">Temas:</h3>
-  <input type="button" value="Sprint 1" onclick="mostarOcultar('text1')">
-  <input type="button" value="Sprint 2" onclick="mostarOcultar('text2')">
-  <br/>
-  <h2 "TITULO2" align="left">Sprint 2: Introducción al desarrollo web y construcción de páginas web</h2><br>
-      <div align="left">
-      1. Ciclo de vida del desarrollo web y arquitectura básica cliente/servidor/Configuración del ambiente de trabajo e introducción a git.<br>
-      2. HTML y Javascript en el navegador.<br>
-      3. Manejo de comandos básicos de git en la terminal.<br>
-      4. Pruebas unitarias.<br>
-      5. Git / Resolución de conflictos / Branching model.<br>
-      6. DOM / BOM.<br></div>
-    <h2 "TITULO2" align="left">Sprint 1: Introducción a JavaScript</h2><br>
-        <div align="left">
-        1. Fundamentos de Programación<br>
-        2. Funciones<br>
-        3. Arreglos<br>
-        4. Objetos<br></div>
-
-  <hr style="color: #0056b2;"  noshade />
-
-  <h2 align="left">Quiz</h2><br>
-  <h3 align="left">Existen dos tipos de funciones</h3>
-  <div align="left">
-    <input type="radio" name= "GIT" value="1"checked>Expresadas y declaradas<br>
-    <input type="radio" name= "GIT" value="2">Echeckedxplicitas y declaradas <br>
-    <input type="radio" name= "GIT" value="3">Expresadas y derivadas<br>
-  </div>
-  <h3 align="left">Elige una propiedad de los arreglos</h3>
-  <div align="left">
-    <input type="radio" name= "GIT" value="1"checked>clear<br>
-    <input type="radio" name= "GIT" value="2">pop<br>
-    <input type="radio" name= "GIT" value="3">add<br>
-  </div>
-  <h3 align="left">Un objeto tiene ______ y _______</h3>
-  <div align="left">
-    <input type="radio" name= "GIT" value="1"checked>numeros y letras<br>
-    <input type="radio" name= "GIT" value="2">partes y validaciones<br>
-    <input type="radio" name= "GIT" value="3">propiedades y valores<br>
-  </div>
-
-  <h2 align="left">Quiz</h2><br>
-  <h3 align="left">¿Cuál es el comando para iniciar un repositorio desde la consola?</h3>
-  <div align="left">
-    <input type="radio" name= "GIT" value="1">git init.<br>
-    <input type="radio" name= "GIT" value="2"checked>git init <br>
-    <input type="radio" name= "GIT" value="3">git init add<br>
-  </div>
-  <h3 align="left">¿Cuál es la finalidad de hacer una prueba unitaria?</h3>
-  <div align="left">
-    <input type="radio" name= "GIT" value="1"checked>Comprobar que el código funciona correctamente.<br>
-    <input type="radio" name= "GIT" value="2">Darle valores a los parámetros de dichas funciones.<br>
-    <input type="radio" name= "GIT" value="3">No tiene ningún fin.<br>
-  </div>
-  <h3 align="left">¿Qué significa DOM?</h3>
-  <div align="left">
-    <input type="radio" name= "GIT" value="1">Dual Object Model.<br>
-    <input type="radio" name= "GIT" value="2" checked>Document Objet Model<br>
-    <input type="radio" name= "GIT" value="3">Document Obsolet Model<br>
-  </div>
-
- <input type="submit" value="Enviar">
+  <button>Sprint 1</button> <button>Sprint 2</button> <button>Sprint 3</button>
   <div id = nombre></div>
-  <script>
-    var nombre = document.getElementById("nombre");
-    prompt("¿Cuál es tu nombre?");
-  </script>
-  <script>
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-  </script>
-
 
 </body>
 </html>
